@@ -56,6 +56,16 @@ missing or unreadable.
   picks and locks, and reports drift: installed competitors, picks not
   installed yet, and tools no need covers.
 
-Only the description and your package names are sent to ToolDB. ToolDB caps its AI planning per day; when the cap is hit, init still works from your installed packages and leaves the other needs open. Set
-`TOOLDB_URL` to use another ToolDB instance; the default is
+## What is sent to ToolDB
+
+Your code never leaves your machine. The plugin sends only:
+
+- the package names from your `package.json` files (up to 400),
+- on init: the one-paragraph project description and the budget you chose,
+- on sync: your current `tools.md`.
+
+ToolDB caps its AI planning per day. When the cap is hit, init still works
+from your installed packages and leaves the other needs open.
+
+Set `TOOLDB_URL` to use another ToolDB instance. The default is
 `https://tooldb-web-production.up.railway.app`.
