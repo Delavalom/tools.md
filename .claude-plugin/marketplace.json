@@ -1,0 +1,12 @@
+{
+  "name": "tools.md",
+  "owner": { "name": "Delavalom", "url": "https://github.com/Delavalom" },
+  "metadata": { "description": "tools.md: a lockfile for your project's tool choices, for Claude Code." },
+  "plugins": [
+    {
+      "name": "tooldb",
+      "source": "./plugins/tooldb",
+      "description": "tools.md: evidence-ranked tool choices for your repo, followed by Claude and enforced when locked."
+    }
+  ]
+}

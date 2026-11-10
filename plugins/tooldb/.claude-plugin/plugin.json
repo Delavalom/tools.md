@@ -1,0 +1,8 @@
+{
+  "name": "tooldb",
+  "version": "0.1.0",
+  "description": "tools.md for your repo: ToolDB picks the tool for each job from evidence (not training data or ads), Claude follows it, and locked choices are enforced by a hook.",
+  "author": { "name": "Delavalom", "url": "https://github.com/Delavalom" },
+  "homepage": "https://tooldb-web-production.up.railway.app",
+  "keywords": ["tools", "stack", "dependencies", "recommendations", "tools.md"]
+}

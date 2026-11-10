@@ -1,0 +1,8 @@
+{
+  "name": "tools.md",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "vitest run" },
+  "devDependencies": { "@types/node": "^22", "typescript": "^5.7", "vitest": "^3" },
+  "engines": { "node": ">=22" }
+}
