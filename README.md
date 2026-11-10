@@ -64,8 +64,12 @@ Your code never leaves your machine. The plugin sends only:
 - on init: the one-paragraph project description and the budget you chose,
 - on sync: your current `tools.md`.
 
-ToolDB caps its AI planning per day. When the cap is hit, init still works
-from your installed packages and leaves the other needs open.
+If you set `TOOLDB_API_KEY`, it is sent as a bearer token to `TOOLDB_URL`.
+Only set it for a ToolDB instance you run.
+
+ToolDB caps its AI planning per day. When the cap is hit, init writes a
+tools.md that covers only the tools you already use. Delete it and run
+`/tooldb:init` again another day for open needs and candidates.
 
 Set `TOOLDB_URL` to use another ToolDB instance. The default is
 `https://tooldb-web-production.up.railway.app`.
